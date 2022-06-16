@@ -14,12 +14,12 @@ export default function AppStartBtn(props) {
 
   const handleStartClick = () => {
     onStartClick();
-    container.current.classList.add('expend');
+    container.current.classList.add('expand');
   }
 
   return (
-    <div class="loader-container app-section" ref={container}>
-      <div class="ball-box">
+    <div class="loader-container app-section">
+      <div class="ball-box" ref={container}>
         <div class="stopped-ball hide" ref={ball} onClick={handleStartClick}/>
       </div>
     </div>
